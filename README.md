@@ -2,6 +2,7 @@
 
 ## Neofetch
 This is my selfmade neofetch theme.
+![Neofetch Screenshot](https://raw.githubusercontent.com/bengiv/dotfiles/main/neofetch/IMG_0455.jpeg)
 
 ## Hyfetch
 My hyfetch config.

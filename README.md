@@ -1,4 +1,5 @@
-<h1 align="center">bengiv - dotfiles</h1>
+<img src="https://raw.githubusercontent.com/bengiv/bengiv/main/assets/banners/dotfiles.png">
+
 
 ## Neofetch
 This is my selfmade neofetch theme.

@@ -1,5 +1,5 @@
 export PATH="$HOME/Library/Python/3.9/bin:$PATH"
-export PATH="/opt/homebrew/Cellar/python@3.12/3.12.2_1/bin"
+export PATH="/opt/homebrew/Cellar/python@3.12/3.12.2_1/bin:$PATH"
 export PATH="$HOME/.cargo/bin:$PATH"
 export PATH="$HOME/CLI:$PATH"
 

@@ -1,5 +1,9 @@
 export PATH="$HOME/Library/Python/3.9/bin:$PATH"
+export PATH="/opt/homebrew/Cellar/python@3.12/3.12.2_1/bin"
 export PATH="$HOME/.cargo/bin:$PATH"
-alias ls='exa -ghs type --icons'
-alias ll='exa -lghs type --icons'
-alias la='exa -lghas type --icons'
+export PATH="$HOME/CLI:$PATH"
+
+alias ls='eza -ghs type --icons'
+alias ll='eza -lghs type --icons'
+alias la='eza -lghas type --icons'
+alias am='$HOME/am.sh/src/am.sh'

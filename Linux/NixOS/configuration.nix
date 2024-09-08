@@ -99,6 +99,14 @@
 
   programs.zsh.enable = true;
 
+  programs.steam = {
+    enable = true;
+    remotePlay.openFirewall = true; # Open ports in the firewall for Steam Remote Play
+    dedicatedServer.openFirewall = true; # Open ports in the firewall for Source Dedicated Server
+    localNetworkGameTransfers.openFirewall = true; # Open ports in the firewall for Steam Local Network Game Transfers
+  };
+
+
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
@@ -106,9 +114,9 @@
   # $ nix search wget
   environment.systemPackages = with pkgs; [
     git # added by nstall
-  #  vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
-    nano
     gh
+    wineWowPackages.staging
+    winetricks
     zsh
     starship
     wget

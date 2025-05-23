@@ -1,4 +1,4 @@
-# <img src="https://raw.githubusercontent.com/bengiv/bengiv/main/assets/banners/dotfiles.png">
+# <img src="https://raw.githubusercontent.com/bjsho/bjsho/refs/heads/main/assets/banners/dotfiles.png">
 
 ## About
 I am providing configs both for Linux and for macOS, cuz for e. g. my neofetch config is different for macos than for linux

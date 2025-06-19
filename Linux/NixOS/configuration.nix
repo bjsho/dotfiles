@@ -32,18 +32,18 @@
   time.timeZone = "Europe/Berlin";
 
   # Select internationalisation properties.
-  i18n.defaultLocale = "en_US.UTF-8";
+  i18n.defaultLocale = "en_GB.UTF-8";
 
   i18n.extraLocaleSettings = {
-    LC_ADDRESS = "en_CA.UTF-8";
-    LC_IDENTIFICATION = "en_CA.UTF-8";
-    LC_MEASUREMENT = "en_CA.UTF-8";
-    LC_MONETARY = "en_CA.UTF-8";
-    LC_NAME = "en_CA.UTF-8";
-    LC_NUMERIC = "en_CA.UTF-8";
-    LC_PAPER = "en_CA.UTF-8";
-    LC_TELEPHONE = "en_CA.UTF-8";
-    LC_TIME = "en_CA.UTF-8";
+    LC_ADDRESS = "en_GB.UTF-8";
+    LC_IDENTIFICATION = "en_GB.UTF-8";
+    LC_MEASUREMENT = "en_GB.UTF-8";
+    LC_MONETARY = "en_GB.UTF-8";
+    LC_NAME = "en_GB.UTF-8";
+    LC_NUMERIC = "en_GB.UTF-8";
+    LC_PAPER = "en_GB.UTF-8";
+    LC_TELEPHONE = "en_GB.UTF-8";
+    LC_TIME = "en_GB.UTF-8";
   };
 
   # Enable the X11 windowing system.
@@ -90,7 +90,6 @@
     extraGroups = [ "networkmanager" "wheel" ];
     packages = with pkgs; [
       kdePackages.kate
-    #  thunderbird
     ];
   };
 
@@ -113,7 +112,7 @@
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
-    git # added by nstall
+    git
     gh
     wineWowPackages.staging
     winetricks
@@ -129,7 +128,6 @@
     zulu8
     bluez
     bluez-tools
-    /nix/store/qjb9g1l9h0lp56hi38sa491nawbn1wfw-nstall-0.2.0
   ];
 
   # Some programs need SUID wrappers, can be configured further or are

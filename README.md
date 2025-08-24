@@ -1,1 +1,1 @@
-# <img src="https://raw.githubusercontent.com/bjsho/bjsho/refs/heads/main/assets/banners/dotfiles.png">
+# <img src="https://raw.githubusercontent.com/bjsho/assets/refs/heads/main/banners/dotfiles.png">

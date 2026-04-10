@@ -5,9 +5,22 @@
             "complex_modifications": {
                 "rules": [
                     {
+                        "description": "ctrl+left click to left click",
                         "manipulators": [
                             {
-                                "description": "Make Caps Lock the Hyper Key and make the run various applications",
+                                "from": {
+                                    "modifiers": { "mandatory": ["control"] },
+                                    "pointing_button": "button1"
+                                },
+                                "to": [{ "pointing_button": "button1" }],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "manipulators": [
+                            {
+                                "description": "Make Caps Lock the Hyper Key and make the run various applications and tasks",
                                 "from": {
                                     "key_code": "caps_lock",
                                     "modifiers": { "optional": ["any"] }
@@ -20,16 +33,13 @@
                                 ],
                                 "type": "basic"
                             },
-
-
-
                             {
                                 "description": "Open Karabiner Elements Config",
                                 "from": {
                                     "key_code": "comma",
                                     "modifiers": { "mandatory": ["left_control", "left_option", "left_command", "left_shift"] }
                                 },
-                                "to": [{ "shell_command": "open -a 'Visual Studio Code.app' '~/.config/karabiner/karabiner.json'" }],
+                                "to": [{ "shell_command": "open -a 'Visual Studio Code.app' '/Users/sbc/.config/karabiner/karabiner.json'" }],
                                 "type": "basic"
                             },
                             {
@@ -47,7 +57,7 @@
                                     "key_code": "return_or_enter",
                                     "modifiers": { "mandatory": ["left_control", "left_option", "left_command", "left_shift"] }
                                 },
-                                "to": [{ "shell_command": "open -a 'Microsoft Word.app' '~/Documents/dotx'" }],
+                                "to": [{ "shell_command": "open -a 'Microsoft Word.app' '/Users/sbc/Documents/dotx'" }],
                                 "type": "basic"
                             },
                             {
@@ -60,12 +70,12 @@
                                 "type": "basic"
                             },
                             {
-                                "description": "Open Zen",
+                                "description": "Open Browser",
                                 "from": {
                                     "key_code": "c",
                                     "modifiers": { "mandatory": ["left_control", "left_option", "left_command", "left_shift"] }
                                 },
-                                "to": [{ "shell_command": "open -a 'Zen.app'" }],
+                                "to": [{ "shell_command": "open -a 'Helium.app'" }],
                                 "type": "basic"
                             },
                             {
@@ -74,40 +84,31 @@
                                     "key_code": "d",
                                     "modifiers": { "mandatory": ["left_control", "left_option", "left_command", "left_shift"] }
                                 },
-                                "to": [{ "shell_command": "open -a 'Calendar.app'" }],
+                                "to": [{ "shell_command": "open -a 'Notion Calendar.app'" }],
                                 "type": "basic"
                             },
                             {
-                                "description": "Open Reminders",
+                                "description": "Open Notion",
                                 "from": {
                                     "key_code": "r",
                                     "modifiers": { "mandatory": ["left_control", "left_option", "left_command", "left_shift"] }
                                 },
-                                "to": [{ "shell_command": "open -a 'Reminders.app'" }],
+                                "to": [{ "shell_command": "open -a 'Notion.app'" }],
                                 "type": "basic"
                             },
                             {
                                 "description": "Open Mails",
                                 "from": {
-                                    "key_code": "m",
+                                    "key_code": "z",
                                     "modifiers": { "mandatory": ["left_control", "left_option", "left_command", "left_shift"] }
                                 },
-                                "to": [{ "shell_command": "open -a 'Mail.app'" }],
-                                "type": "basic"
-                            },
-                            {
-                                "description": "Open Perplexity",
-                                "from": {
-                                    "key_code": "a",
-                                    "modifiers": { "mandatory": ["left_control", "left_option", "left_command", "left_shift"] }
-                                },
-                                "to": [{ "shell_command": "open -a 'Perplexity.app'" }],
+                                "to": [{ "shell_command": "open -a 'Outlook (PWA).app'" }],
                                 "type": "basic"
                             },
                             {
                                 "description": "Open Music",
                                 "from": {
-                                    "key_code": "z",
+                                    "key_code": "s",
                                     "modifiers": { "mandatory": ["left_control", "left_option", "left_command", "left_shift"] }
                                 },
                                 "to": [{ "shell_command": "open -a 'Music.app'" }],
@@ -116,7 +117,7 @@
                             {
                                 "description": "Open Anki",
                                 "from": {
-                                    "key_code": "s",
+                                    "key_code": "a",
                                     "modifiers": { "mandatory": ["left_control", "left_option", "left_command", "left_shift"] }
                                 },
                                 "to": [{ "shell_command": "open -a 'Anki.app'" }],
@@ -131,18 +132,6 @@
                                 "to": [{ "shell_command": "open -a 'Discord.app'" }],
                                 "type": "basic"
                             },
-                            {
-                                "description": "Open DeepL",
-                                "from": {
-                                    "key_code": "t",
-                                    "modifiers": { "mandatory": ["left_control", "left_option", "left_command", "left_shift"] }
-                                },
-                                "to": [{ "shell_command": "open -a 'DeepL.app'" }],
-                                "type": "basic"
-                            },
-
-
-
                             {
                                 "description": "Umlaut",
                                 "from": {
@@ -171,32 +160,15 @@
                                 ],
                                 "type": "basic"
                             },
-
-
-
                             {
                                 "description": "Window Management: Maximise",
-                                "from": {
-                                    "key_code": "f",
-                                    "modifiers": { "mandatory": ["left_control", "left_option", "left_command", "left_shift"] }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "f",
-                                        "modifiers": ["left_control", "fn"]
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "description": "Window Management: Center",
                                 "from": {
                                     "key_code": "w",
                                     "modifiers": { "mandatory": ["left_control", "left_option", "left_command", "left_shift"] }
                                 },
                                 "to": [
                                     {
-                                        "key_code": "c",
+                                        "key_code": "f",
                                         "modifiers": ["left_control", "fn"]
                                     }
                                 ],
@@ -231,35 +203,6 @@
                                 "type": "basic"
                             },
                             {
-                                "description": "Window Management: Switcher",
-                                "from": {
-                                    "key_code": "tab",
-                                    "modifiers": { "mandatory": ["left_control", "left_option", "left_command", "left_shift"] }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "tab",
-                                        "modifiers": ["left_command"]
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-
-
-
-                            {
-                                "description": "Control Spacebar",
-                                "from": {
-                                    "key_code": "spacebar",
-                                    "modifiers": { "mandatory": ["left_control"] }
-                                },
-                                "to": [{ "key_code": "spacebar" }],
-                                "type": "basic"
-                            },
-
-
-
-                            {
                                 "conditions": [
                                     {
                                         "bundle_identifiers": [
@@ -268,7 +211,7 @@
                                         "type": "frontmost_application_if"
                                     }
                                 ],
-                                "description": "APP SPECIFIC - Word: Multiply Latex",
+                                "description": "APP SPECIFIC - Word: Multiply LaTeX",
                                 "from": {
                                     "key_code": "8",
                                     "modifiers": { "mandatory": ["left_control", "left_option", "left_command", "left_shift"] }
@@ -283,44 +226,21 @@
                                     { "key_code": "spacebar" }
                                 ],
                                 "type": "basic"
-                            }, 
+                            },
                             {
-                                "conditions": [
-                                    {
-                                        "bundle_identifiers": [
-                                            "^com\\.microsoft\\.Word$"
-                                        ],
-                                        "type": "frontmost_application_if"
-                                    }
-                                ],
-                                "description": "APP SPECIFIC - Word: Insert Footnote",
+                                "description": "Command Spacebar",
                                 "from": {
-                                    "key_code": "2",
-                                    "modifiers": { "mandatory": ["left_control", "left_option", "left_command", "left_shift"] }
+                                    "key_code": "spacebar",
+                                    "modifiers": { "mandatory": ["left_control"] }
                                 },
-                                "to": [
-                                    {
-                                        "key_code": "f",
-                                        "modifiers": ["left_command", "left_option"]
-                                    }
-                                ],
+                                "to": [{ "key_code": "spacebar" }],
                                 "type": "basic"
                             }
-                            
                         ]
                     }
                 ]
             },
             "devices": [
-                {
-                    "fn_function_keys": [
-                        {
-                            "from": { "key_code": "f6" },
-                            "to": [{ "key_code": "f16" }]
-                        }
-                    ],
-                    "identifiers": { "is_keyboard": true }
-                },
                 {
                     "identifiers": {
                         "is_keyboard": true,
@@ -329,6 +249,7 @@
                         "vendor_id": 1133
                     },
                     "ignore": false,
+                    "ignore_vendor_events": true,
                     "treat_as_built_in_keyboard": true
                 }
             ],

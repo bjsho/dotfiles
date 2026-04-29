@@ -1,1 +1,1 @@
-# <img src="https://raw.githubusercontent.com/bjsho/assets/refs/heads/main/banners/dotfiles.png">
+# <img src="https://codeberg.org/sho/assets/raw/branch/prod/banners/dotfiles.png">

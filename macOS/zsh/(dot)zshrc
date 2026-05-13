@@ -3,8 +3,12 @@ eval "$(starship init zsh)"
 export PATH="$HOME/.cargo/bin:$PATH"
 export PATH="$HOME/.cargo/env:$PATH"
 
-alias ls='eza -ghs type --icons'
-alias ll='eza -lghs type --icons'
-alias la='eza -lghas type --icons'
+alias add='git add'
+alias commit='git commit -am'
+alias push='git push -u origin'
 
-alias nenv='nix-env'
+alias els='eza -ghs type --icons'
+alias ell='eza -lghs type --icons'
+alias ela='eza -lghas type --icons'
+
+export SSH_AUTH_SOCK=~/Library/Containers/com.maxgoedjen.Secretive.SecretAgent/Data/socket.ssh

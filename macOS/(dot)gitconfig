@@ -1,0 +1,9 @@
+[gpg]
+	format = ssh
+[user]
+	signingKey = [insert secretive key path]
+	name = [insert name]
+	email = [insert mail]
+[commit]
+	gpgSign = true
+

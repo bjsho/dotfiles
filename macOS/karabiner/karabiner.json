@@ -1,261 +1,385 @@
 {
-    "global": { "show_in_menu_bar": false },
-    "profiles": [
+  "profiles": [
+    {
+      "complex_modifications": {
+        "rules": [
+          {
+            "description": "ctrl+left click to left click",
+            "manipulators": [
+              {
+                "from": {
+                  "modifiers": { "mandatory": ["control"] },
+                  "pointing_button": "button1"
+                },
+                "to": [{ "pointing_button": "button1" }],
+                "type": "basic"
+              }
+            ]
+          },
+          {
+            "manipulators": [
+              {
+                "description": "Make Caps Lock the Hyper Key and make the run various applications and tasks",
+                "from": {
+                  "key_code": "caps_lock",
+                  "modifiers": { "optional": ["any"] }
+                },
+                "to": [
+                  {
+                    "key_code": "left_shift",
+                    "modifiers": ["left_command", "left_control", "left_option"]
+                  }
+                ],
+                "type": "basic"
+              },
+              {
+                "description": "Open Karabiner Elements Config",
+                "from": {
+                  "key_code": "comma",
+                  "modifiers": {
+                    "mandatory": [
+                      "left_control",
+                      "left_option",
+                      "left_command",
+                      "left_shift"
+                    ]
+                  }
+                },
+                "to": [
+                  {
+                    "shell_command": "open -a 'Zed.app' '~/.config/karabiner/karabiner.json'"
+                  }
+                ],
+                "type": "basic"
+              },
+              {
+                "description": "Open Activity Monitor",
+                "from": {
+                  "key_code": "escape",
+                  "modifiers": {
+                    "mandatory": [
+                      "left_control",
+                      "left_option",
+                      "left_command",
+                      "left_shift"
+                    ]
+                  }
+                },
+                "to": [{ "shell_command": "open -a 'Activity Monitor.app'" }],
+                "type": "basic"
+              },
+              {
+                "description": "Open Default Word tempalte",
+                "from": {
+                  "key_code": "return_or_enter",
+                  "modifiers": {
+                    "mandatory": [
+                      "left_control",
+                      "left_option",
+                      "left_command",
+                      "left_shift"
+                    ]
+                  }
+                },
+                "to": [
+                  {
+                    "shell_command": "open -a 'Microsoft Word.app' '~/Documents/dotx'"
+                  }
+                ],
+                "type": "basic"
+              },
+              {
+                "description": "Open Finder",
+                "from": {
+                  "key_code": "x",
+                  "modifiers": {
+                    "mandatory": [
+                      "left_control",
+                      "left_option",
+                      "left_command",
+                      "left_shift"
+                    ]
+                  }
+                },
+                "to": [{ "shell_command": "open -a 'Finder.app'" }],
+                "type": "basic"
+              },
+              {
+                "description": "Open Browser",
+                "from": {
+                  "key_code": "c",
+                  "modifiers": {
+                    "mandatory": [
+                      "left_control",
+                      "left_option",
+                      "left_command",
+                      "left_shift"
+                    ]
+                  }
+                },
+                "to": [{ "shell_command": "open -a 'Helium.app'" }],
+                "type": "basic"
+              },
+              {
+                "description": "Open Calendar",
+                "from": {
+                  "key_code": "d",
+                  "modifiers": {
+                    "mandatory": [
+                      "left_control",
+                      "left_option",
+                      "left_command",
+                      "left_shift"
+                    ]
+                  }
+                },
+                "to": [{ "shell_command": "open -a 'Notion Calendar.app'" }],
+                "type": "basic"
+              },
+              {
+                "description": "Open Notion",
+                "from": {
+                  "key_code": "r",
+                  "modifiers": {
+                    "mandatory": [
+                      "left_control",
+                      "left_option",
+                      "left_command",
+                      "left_shift"
+                    ]
+                  }
+                },
+                "to": [{ "shell_command": "open -a 'Notion.app'" }],
+                "type": "basic"
+              },
+              {
+                "description": "Open Mails",
+                "from": {
+                  "key_code": "z",
+                  "modifiers": {
+                    "mandatory": [
+                      "left_control",
+                      "left_option",
+                      "left_command",
+                      "left_shift"
+                    ]
+                  }
+                },
+                "to": [{ "shell_command": "open -a 'Mail.app'" }],
+                "type": "basic"
+              },
+              {
+                "description": "Open Music",
+                "from": {
+                  "key_code": "s",
+                  "modifiers": {
+                    "mandatory": [
+                      "left_control",
+                      "left_option",
+                      "left_command",
+                      "left_shift"
+                    ]
+                  }
+                },
+                "to": [{ "shell_command": "open -a 'Music.app'" }],
+                "type": "basic"
+              },
+              {
+                "description": "Open Anki",
+                "from": {
+                  "key_code": "a",
+                  "modifiers": {
+                    "mandatory": [
+                      "left_control",
+                      "left_option",
+                      "left_command",
+                      "left_shift"
+                    ]
+                  }
+                },
+                "to": [{ "shell_command": "open -a 'Anki.app'" }],
+                "type": "basic"
+              },
+              {
+                "description": "Open Discord",
+                "from": {
+                  "key_code": "v",
+                  "modifiers": {
+                    "mandatory": [
+                      "left_control",
+                      "left_option",
+                      "left_command",
+                      "left_shift"
+                    ]
+                  }
+                },
+                "to": [{ "shell_command": "open -a 'Discord.app'" }],
+                "type": "basic"
+              },
+              {
+                "description": "Umlaut",
+                "from": {
+                  "key_code": "grave_accent_and_tilde",
+                  "modifiers": {
+                    "mandatory": [
+                      "left_control",
+                      "left_option",
+                      "left_command",
+                      "left_shift"
+                    ]
+                  }
+                },
+                "to": [
+                  {
+                    "key_code": "u",
+                    "modifiers": ["right_option"]
+                  }
+                ],
+                "type": "basic"
+              },
+              {
+                "description": "Accento",
+                "from": {
+                  "key_code": "1",
+                  "modifiers": {
+                    "mandatory": [
+                      "left_control",
+                      "left_option",
+                      "left_command",
+                      "left_shift"
+                    ]
+                  }
+                },
+                "to": [
+                  {
+                    "key_code": "e",
+                    "modifiers": ["right_option"]
+                  }
+                ],
+                "type": "basic"
+              },
+              {
+                "description": "Window Management: Maximise",
+                "from": {
+                  "key_code": "w",
+                  "modifiers": {
+                    "mandatory": [
+                      "left_control",
+                      "left_option",
+                      "left_command",
+                      "left_shift"
+                    ]
+                  }
+                },
+                "to": [
+                  {
+                    "key_code": "f",
+                    "modifiers": ["left_control", "fn"]
+                  }
+                ],
+                "type": "basic"
+              },
+              {
+                "description": "Window Management: Half: Left",
+                "from": {
+                  "key_code": "q",
+                  "modifiers": {
+                    "mandatory": [
+                      "left_control",
+                      "left_option",
+                      "left_command",
+                      "left_shift"
+                    ]
+                  }
+                },
+                "to": [
+                  {
+                    "key_code": "left_arrow",
+                    "modifiers": ["left_control", "fn"]
+                  }
+                ],
+                "type": "basic"
+              },
+              {
+                "description": "Window Management: Half: Right",
+                "from": {
+                  "key_code": "e",
+                  "modifiers": {
+                    "mandatory": [
+                      "left_control",
+                      "left_option",
+                      "left_command",
+                      "left_shift"
+                    ]
+                  }
+                },
+                "to": [
+                  {
+                    "key_code": "right_arrow",
+                    "modifiers": ["left_control", "fn"]
+                  }
+                ],
+                "type": "basic"
+              },
+              {
+                "conditions": [
+                  {
+                    "bundle_identifiers": ["^com\\.microsoft\\.Word$"],
+                    "type": "frontmost_application_if"
+                  }
+                ],
+                "description": "APP SPECIFIC - Word: Multiply LaTeX",
+                "from": {
+                  "key_code": "8",
+                  "modifiers": {
+                    "mandatory": [
+                      "left_control",
+                      "left_option",
+                      "left_command",
+                      "left_shift"
+                    ]
+                  }
+                },
+                "to": [
+                  { "key_code": "backslash" },
+                  { "key_code": "t" },
+                  { "key_code": "i" },
+                  { "key_code": "m" },
+                  { "key_code": "e" },
+                  { "key_code": "s" },
+                  { "key_code": "spacebar" }
+                ],
+                "type": "basic"
+              },
+              {
+                "description": "Command Spacebar",
+                "from": {
+                  "key_code": "spacebar",
+                  "modifiers": { "mandatory": ["left_control"] }
+                },
+                "to": [{ "key_code": "spacebar" }],
+                "type": "basic"
+              }
+            ]
+          }
+        ]
+      },
+      "devices": [
         {
-            "complex_modifications": {
-                "rules": [
-                    {
-                        "description": "ctrl+left click to left click",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "modifiers": { "mandatory": ["control"] },
-                                    "pointing_button": "button1"
-                                },
-                                "to": [{ "pointing_button": "button1" }],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "manipulators": [
-                            {
-                                "description": "Make Caps Lock the Hyper Key and make the run various applications and tasks",
-                                "from": {
-                                    "key_code": "caps_lock",
-                                    "modifiers": { "optional": ["any"] }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "left_shift",
-                                        "modifiers": ["left_command", "left_control", "left_option"]
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "description": "Open Karabiner Elements Config",
-                                "from": {
-                                    "key_code": "comma",
-                                    "modifiers": { "mandatory": ["left_control", "left_option", "left_command", "left_shift"] }
-                                },
-                                "to": [{ "shell_command": "open -a 'Visual Studio Code.app' '/Users/sbc/.config/karabiner/karabiner.json'" }],
-                                "type": "basic"
-                            },
-                            {
-                                "description": "Open Activity Monitor",
-                                "from": {
-                                    "key_code": "escape",
-                                    "modifiers": { "mandatory": ["left_control", "left_option", "left_command", "left_shift"] }
-                                },
-                                "to": [{ "shell_command": "open -a 'Activity Monitor.app'" }],
-                                "type": "basic"
-                            },
-                            {
-                                "description": "Open Default Word tempalte",
-                                "from": {
-                                    "key_code": "return_or_enter",
-                                    "modifiers": { "mandatory": ["left_control", "left_option", "left_command", "left_shift"] }
-                                },
-                                "to": [{ "shell_command": "open -a 'Microsoft Word.app' '/Users/sbc/Documents/dotx'" }],
-                                "type": "basic"
-                            },
-                            {
-                                "description": "Open Finder",
-                                "from": {
-                                    "key_code": "x",
-                                    "modifiers": { "mandatory": ["left_control", "left_option", "left_command", "left_shift"] }
-                                },
-                                "to": [{ "shell_command": "open -a 'Finder.app'" }],
-                                "type": "basic"
-                            },
-                            {
-                                "description": "Open Browser",
-                                "from": {
-                                    "key_code": "c",
-                                    "modifiers": { "mandatory": ["left_control", "left_option", "left_command", "left_shift"] }
-                                },
-                                "to": [{ "shell_command": "open -a 'Helium.app'" }],
-                                "type": "basic"
-                            },
-                            {
-                                "description": "Open Calendar",
-                                "from": {
-                                    "key_code": "d",
-                                    "modifiers": { "mandatory": ["left_control", "left_option", "left_command", "left_shift"] }
-                                },
-                                "to": [{ "shell_command": "open -a 'Notion Calendar.app'" }],
-                                "type": "basic"
-                            },
-                            {
-                                "description": "Open Notion",
-                                "from": {
-                                    "key_code": "r",
-                                    "modifiers": { "mandatory": ["left_control", "left_option", "left_command", "left_shift"] }
-                                },
-                                "to": [{ "shell_command": "open -a 'Notion.app'" }],
-                                "type": "basic"
-                            },
-                            {
-                                "description": "Open Mails",
-                                "from": {
-                                    "key_code": "z",
-                                    "modifiers": { "mandatory": ["left_control", "left_option", "left_command", "left_shift"] }
-                                },
-                                "to": [{ "shell_command": "open -a 'Outlook (PWA).app'" }],
-                                "type": "basic"
-                            },
-                            {
-                                "description": "Open Music",
-                                "from": {
-                                    "key_code": "s",
-                                    "modifiers": { "mandatory": ["left_control", "left_option", "left_command", "left_shift"] }
-                                },
-                                "to": [{ "shell_command": "open -a 'Music.app'" }],
-                                "type": "basic"
-                            },
-                            {
-                                "description": "Open Anki",
-                                "from": {
-                                    "key_code": "a",
-                                    "modifiers": { "mandatory": ["left_control", "left_option", "left_command", "left_shift"] }
-                                },
-                                "to": [{ "shell_command": "open -a 'Anki.app'" }],
-                                "type": "basic"
-                            },
-                            {
-                                "description": "Open Discord",
-                                "from": {
-                                    "key_code": "v",
-                                    "modifiers": { "mandatory": ["left_control", "left_option", "left_command", "left_shift"] }
-                                },
-                                "to": [{ "shell_command": "open -a 'Discord.app'" }],
-                                "type": "basic"
-                            },
-                            {
-                                "description": "Umlaut",
-                                "from": {
-                                    "key_code": "grave_accent_and_tilde",
-                                    "modifiers": { "mandatory": ["left_control", "left_option", "left_command", "left_shift"] }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "u",
-                                        "modifiers": ["right_option"]
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "description": "Accento",
-                                "from": {
-                                    "key_code": "1",
-                                    "modifiers": { "mandatory": ["left_control", "left_option", "left_command", "left_shift"] }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "e",
-                                        "modifiers": ["right_option"]
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "description": "Window Management: Maximise",
-                                "from": {
-                                    "key_code": "w",
-                                    "modifiers": { "mandatory": ["left_control", "left_option", "left_command", "left_shift"] }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "f",
-                                        "modifiers": ["left_control", "fn"]
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "description": "Window Management: Half: Left",
-                                "from": {
-                                    "key_code": "q",
-                                    "modifiers": { "mandatory": ["left_control", "left_option", "left_command", "left_shift"] }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "left_arrow",
-                                        "modifiers": ["left_control", "fn"]
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "description": "Window Management: Half: Right",
-                                "from": {
-                                    "key_code": "e",
-                                    "modifiers": { "mandatory": ["left_control", "left_option", "left_command", "left_shift"] }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "right_arrow",
-                                        "modifiers": ["left_control", "fn"]
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "conditions": [
-                                    {
-                                        "bundle_identifiers": [
-                                            "^com\\.microsoft\\.Word$"
-                                        ],
-                                        "type": "frontmost_application_if"
-                                    }
-                                ],
-                                "description": "APP SPECIFIC - Word: Multiply LaTeX",
-                                "from": {
-                                    "key_code": "8",
-                                    "modifiers": { "mandatory": ["left_control", "left_option", "left_command", "left_shift"] }
-                                },
-                                "to": [
-                                    { "key_code": "backslash" },
-                                    { "key_code": "t" },
-                                    { "key_code": "i" },
-                                    { "key_code": "m" },
-                                    { "key_code": "e" },
-                                    { "key_code": "s" },
-                                    { "key_code": "spacebar" }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "description": "Command Spacebar",
-                                "from": {
-                                    "key_code": "spacebar",
-                                    "modifiers": { "mandatory": ["left_control"] }
-                                },
-                                "to": [{ "key_code": "spacebar" }],
-                                "type": "basic"
-                            }
-                        ]
-                    }
-                ]
-            },
-            "devices": [
-                {
-                    "identifiers": {
-                        "is_keyboard": true,
-                        "is_pointing_device": true,
-                        "product_id": 45915,
-                        "vendor_id": 1133
-                    },
-                    "ignore": false,
-                    "ignore_vendor_events": true,
-                    "treat_as_built_in_keyboard": true
-                }
-            ],
-            "name": "Default",
-            "selected": true,
-            "virtual_hid_keyboard": { "keyboard_type_v2": "ansi" }
+          "identifiers": {
+            "is_keyboard": true,
+            "is_pointing_device": true,
+            "product_id": 45915,
+            "vendor_id": 1133
+          },
+          "ignore": false,
+          "ignore_vendor_events": true,
+          "treat_as_built_in_keyboard": true
         }
-    ]
+      ],
+      "name": "Default",
+      "selected": true,
+      "virtual_hid_keyboard": { "keyboard_type_v2": "ansi" }
+    }
+  ]
 }

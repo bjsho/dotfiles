@@ -86,7 +86,7 @@
   users.users.ben = {
     isNormalUser = true;
     shell = pkgs.zsh;
-    description = "Ben";
+    description = "ben";
     extraGroups = [ "networkmanager" "wheel" ];
     packages = with pkgs; [
       kdePackages.kate
@@ -120,12 +120,10 @@
     starship
     wget
     hyfetch
-    prismlauncher
-    discord
-    vesktop
-    zulu
-    zulu17
+    modrinth-app
+    equibop
     zulu8
+    zulu25
     bluez
     bluez-tools
   ];

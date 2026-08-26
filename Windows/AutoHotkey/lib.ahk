@@ -12,15 +12,15 @@ runExplorer() {
     }
 }
 
-runMSEdge() {
-    if !WinExist("ahk_exe msedge.exe") {
-        Run("msedge.exe")
-        WinWait("ahk_exe msedge.exe")
-    } else if WinActive("ahk_exe msedge.exe"){
+runHelium() {
+    if !WinExist("ahk_exe helium.exe") {
+        Run("helium.exe")
+        WinWait("ahk_exe helium.exe")
+    } else if WinActive("ahk_exe helium.exe"){
         Send("^{tab}")
     } else {
-        WinActivate("ahk_exe msedge.exe")
-        WinWaitActive("ahk_exe msedge.exe")
+        WinActivate("ahk_exe helium.exe")
+        WinWaitActive("ahk_exe helium.exe")
     }
 }
 

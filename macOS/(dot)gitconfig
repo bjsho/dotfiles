@@ -6,4 +6,5 @@
 	email = [insert mail]
 [commit]
 	gpgSign = true
-
+[gpg "ssh"]
+    	allowedSignersFile = ~/.gitallowedsigners
